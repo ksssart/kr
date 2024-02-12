@@ -1,0 +1,27 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="400"
+        MaxHeight="200"
+        MaxWidth="500"
+        x:Class="up1.menu"
+        Title="МЕНЮ">
+    <Grid>
+        <Image Source="D:/apps/pic/fon3.png" Width="510" Height="230"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Без авторизации доступен только" FontSize="20" Margin="10,-80,0,0"/>
+            <TextBlock Text="          просмотр данных" FontSize="20" Margin="20,-50,0,10"/>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal">              
+        <Button Name="Object" Content="        Объекты" Background="SandyBrown" Click="Objects" Width="150" Height="50" Margin = "10 10 0 0"></Button>
+        <Button Name="Materials" Content="      Материалы" Background="SandyBrown" Click="Material" Width="150" Height="50" Margin = "10 10 0 0"></Button>
+        <Button Name="Zacup" Content="           Закуп" Background="SandyBrown" Click="Zacups" Width="150" Height="50" Margin = "10 10 0 0"></Button>
+        
+    </StackPanel>
+        <StackPanel Orientation="Horizontal">
+        <Button Name="Back" Content="  Назад" Background="RosyBrown" Click="back" Width="80" Height="30" Margin = "205 140 0 0"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

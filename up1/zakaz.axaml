@@ -1,0 +1,28 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="270" d:DesignHeight="530"
+        MaxHeight="430"
+        MaxWidth="440"
+        x:Class="up1.zakaz"
+        Title="ЗАКАЗЫ">
+    <Grid>
+        <Image Source="D:/apps/pic/777.png" Width="520" Height="530"/>
+        <StackPanel Orientation="Vertical">
+        
+            <DataGrid Name="ZakazGrid" x:CompileBindings="False" Margin ="10 0 0 0" Height="250">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="id" Binding="{Binding id}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="client_id" Binding="{Binding client_id}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="object_id" Binding="{Binding object_id}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            
+            <StackPanel Orientation="Horizontal">
+                <Button Name="back" Margin = "10 50 0 0" Content="Назад" Background="RosyBrown" Click="Back"></Button>
+            </StackPanel>
+            
+        </StackPanel>
+    </Grid> 
+</Window>

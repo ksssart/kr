@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="400"
+        MaxHeight="400"
+        MaxWidth="500"
+        x:Class="up1.object_t"
+        Title="ОБЪЕКТЫ">
+    
+        <Grid>
+                <Image Source="D:/apps/pic/999333.png" Width="500" Height="400"/>
+                <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin = "10 10 0 0"> ТАБЛИЦА Объекты: </TextBlock>
+                </StackPanel>
+        
+                <DataGrid Name="ObjectsGrid" x:CompileBindings="False" Margin ="10 0 0 0" Height="300">
+                        <DataGrid.Columns>
+                                <DataGridTextColumn Header="id" Binding="{Binding id}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="name" Binding="{Binding name}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="sotrudnik_id" Binding="{Binding sotrudnik_id}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="status_id" Binding="{Binding status_id}"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                </DataGrid>
+                <StackPanel Orientation="Horizontal">
+                        <Button Name="Back" Content="  Назад" Background="RosyBrown" Click="back" Width="80" Height="30" Margin = "10 350 0 0"></Button>
+                </StackPanel>
+        </Grid> 
+        
+</Window>

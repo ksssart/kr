@@ -1,0 +1,26 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="400"
+        MaxHeight="400"
+        MaxWidth="300"
+        x:Class="up1.dolz"
+        Title="ДОЛЖНОСТИ">
+    
+    <Grid>
+        <Image Source="D:/apps/pic/fonddd.png" Width="310" Height="410"/>
+        <StackPanel Orientation="Vertical">
+            <DataGrid Name="DolznostGrid" x:CompileBindings="False" Margin ="10 0 0 0" Height="300">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="id" Binding="{Binding id}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="name" Binding="{Binding name}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="zp" Binding="{Binding zp}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <StackPanel Orientation="Horizontal">
+                <Button Name="Add" Margin = "10 20 0 0" Content="Назад" Background="AntiqueWhite" Click="Back"></Button>
+            </StackPanel>
+            </StackPanel>
+    </Grid>
+</Window>

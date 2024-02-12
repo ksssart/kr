@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="up1/App.axaml" value="up1/up1.csproj" />
+        <entry key="up1/MainWindow.axaml" value="up1/up1.csproj" />
+        <entry key="up1/add.axaml" value="up1/up1.csproj" />
+        <entry key="up1/admin.axaml" value="up1/up1.csproj" />
+        <entry key="up1/autoriz.axaml" value="up1/up1.csproj" />
+        <entry key="up1/client.axaml" value="up1/up1.csproj" />
+        <entry key="up1/dolz.axaml" value="up1/up1.csproj" />
+        <entry key="up1/material.axaml" value="up1/up1.csproj" />
+        <entry key="up1/materialsss.axaml" value="up1/up1.csproj" />
+        <entry key="up1/menu.axaml" value="up1/up1.csproj" />
+        <entry key="up1/menuAdmin.axaml" value="up1/up1.csproj" />
+        <entry key="up1/object_t.axaml" value="up1/up1.csproj" />
+        <entry key="up1/zacup.axaml" value="up1/up1.csproj" />
+        <entry key="up1/zakaz.axaml" value="up1/up1.csproj" />
+        <entry key="up1/zakup.axaml" value="up1/up1.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

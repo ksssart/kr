@@ -1,0 +1,26 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="200"
+        MaxHeight="200"
+        MaxWidth="500"
+        x:Class="up1.menuAdmin"
+        Title="menuAdmin">
+    <Grid>
+        <Image Source="D:/apps/pic/fon3.png" Width="510" Height="230"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Просмотр данных. Выберите категорию." FontSize="20" Margin="10,-80,0,0"/>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal">              
+            <Button Name="Object" Content="     Сотрудники" Background="SandyBrown" Click="Sotrudnik" Width="150" Height="50" Margin = "10 10 0 0"></Button>
+            <Button Name="Materials" Content="        Клиенты" Background="SandyBrown" Click="Client" Width="150" Height="50" Margin = "10 10 0 0"></Button>
+            <Button Name="Zakaz" Content="          Заказы" Background="SandyBrown" Click="zakaz" Width="150" Height="50" Margin = "10 10 0 0"></Button>
+        
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button Name="Back" Content="  Назад" Background="RosyBrown" Click="back" Width="80" Height="30" Margin = "205 140 0 0"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

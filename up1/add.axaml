@@ -1,0 +1,43 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        MaxHeight="400"
+        MaxWidth="400"
+        x:Class="up1.add"
+        Title="ДОБАВЛЕНИЕ СОТРУДНИКА">
+        <Grid>
+                <Image Source="D:/apps/pic/fonadd.png" Width="510" Height="510"/>
+                <TextBlock Margin = "30 35 0 0" FontSize="20" FontWeight="Bold">Введите данные ниже: </TextBlock>
+                
+                <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                                <TextBlock Margin = "30 80 0 0">id </TextBlock>
+                                <TextBox Name="id" x:CompileBindings="False" Text="{Binding id}" Width="200" Height="5" Margin = "78 70 0 0"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                                <TextBlock Margin = "30 30 0 0">surname: </TextBlock>
+                                <TextBox Name="surname" x:CompileBindings="False" Text="{Binding surname}" Width="200" Height="5" Margin = "27 20 0 0"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                                <TextBlock Margin = "30 30 0 0">name </TextBlock>
+                                <TextBox Name="name" x:CompileBindings="False" Text="{Binding name}" Width="200" Height="5" Margin = "52 20 0 0"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                                <TextBlock Margin = "30 30 0 0">lastname: </TextBlock>
+                                <TextBox Name="lastname" x:CompileBindings="False" Text="{Binding lastname}" Width="200" Height="5" Margin = "24 20 0 0"></TextBox>
+                        </StackPanel>  
+                        <StackPanel Orientation="Horizontal">
+                                <TextBlock Margin = "30 30 0 0">dolznost_id: </TextBlock>
+                                <TextBox Name="dolznost_id" x:CompileBindings="False" Text="{Binding dolznost_id}" Width="200" Height="5" Margin = "10 20 0 0"></TextBox>
+                        </StackPanel>
+                        
+                        <StackPanel Orientation="Horizontal">
+                                <Button Name="Save" Content="Сохранить" Click="Save_OnClick" Margin = "20 15 0 20"></Button>
+                                <Button Name="Back" Content="Назад" Click="GoBack" Margin = "30 15 0 20"></Button>
+                        </StackPanel>
+                </StackPanel>
+                
+        </Grid>
+</Window>
