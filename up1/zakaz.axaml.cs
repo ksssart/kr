@@ -35,6 +35,7 @@ public partial class zakaz : Window
             var zzzak = new zakazsss()
             {
                 id = reader.GetInt32("id"),
+                number = reader.GetInt32("number"),
                 client_id = reader.GetInt32("client_id"),
                 object_id = reader.GetInt32("object_id")
             };
@@ -49,5 +50,35 @@ public partial class zakaz : Window
         var menuAdm= new menuAdmin();
         menuAdm.Show();
         this.Hide();
+    }
+    
+    private void DeleteData(object? sender, RoutedEventArgs e)
+    {
+        try
+        {
+            zakazsss zzzak = ZakazGrid.SelectedItem as zakazsss;
+            if (zzzak == null)
+            {
+                return;
+            }
+            conn = new MySqlConnection(connStr);
+            conn.Open();
+            string sql = "DELETE FROM zakaz WHERE number = " + zzzak.number;
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            _zakaz.Remove(zzzak);
+            ShowTable("SELECT id, number, client_id, object_id FROM zakaz;");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+        
+    }
+
+    private void ShowTable(string selectIdNumberClientIdObjectIdFromZakaz)
+    {
+        throw new NotImplementedException();
     }
 }

@@ -8,7 +8,7 @@
         x:Class="up1.admin"
         Title="ТАБЛИЦЫ">
     <Grid>
-        <Image Source="D:/apps/pic/777.png" Width="520" Height="530"/>
+        <Image Source="D:/apps/pic/b3.png" Width="520" Height="530"/>
         <StackPanel Orientation="Vertical">
             
             <StackPanel Orientation="Horizontal">
@@ -27,7 +27,7 @@
             </DataGrid>
             
             <StackPanel Orientation="Horizontal">
-                <TextBlock VerticalAlignment="Center" Margin = "10 20 0 0">Фильтрация по должности: </TextBlock>
+                <TextBlock VerticalAlignment="Center" Margin = "10 20 0 0" FontWeight="Bold">Фильтрация по должности: </TextBlock>
                 <ComboBox Name="CmbDost" Width="200" Margin ="10 20 0 0" 
                           x:CompileBindings="False"
                           SelectionChanged="Cmb_Dost">
@@ -40,17 +40,17 @@
             </StackPanel>
             
             <StackPanel Orientation="Horizontal">
-                <Button Name="Add" Margin = "10 20 0 0" Content="Добавить" Background="RosyBrown" Click="AddData"></Button>
-                <Button Name="Edit" Margin = "10 20 0 0" Content="Изменить" Background="RosyBrown" Click="EditData"></Button>
-                <Button Name="Dolz" Margin = "10 20 0 0" Content="Должности" Background="RosyBrown" Click="dolz"></Button>
+                <Button Name="Add" Margin = "10 20 0 0" Content="Добавить" Background="White" Click="AddData"></Button>
+                <Button Name="Edit" Margin = "10 20 0 0" Content="Изменить" Background="White" Click="EditData"></Button>
+                <Button Name="Dolz" Margin = "10 20 0 0" Content="Должности" Background="White" Click="dolz"></Button>
                
             </StackPanel>
             
             <StackPanel Orientation="Horizontal">
-                <TextBlock Margin = "10 35 0 0">id: </TextBlock>
+                <TextBlock Margin = "10 35 0 0" FontWeight="Bold" >id: </TextBlock>
                 <TextBox Name="id" x:CompileBindings="False" Text="{Binding id}" Width="200" Height="5" Margin = "10 25 0 0"></TextBox>
-                <Button Name="Delete" Margin = "10 25 0 0" Content="Удалить" Background="RosyBrown" Click="DeleteData"></Button>
-                <Button Name="Back" Margin = "125 20 0 0" Content="Назад" Background="AntiqueWhite" Click="back"></Button>
+                <Button Name="Delete" Margin = "10 25 0 0" Content="Удалить" Background="White" Click="DeleteData"></Button>
+                <Button Name="Back" Margin = "125 20 0 0" Content="Назад" Background="DarkOrange" Click="back"></Button>
             </StackPanel>
             </StackPanel>
         

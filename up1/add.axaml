@@ -8,7 +8,7 @@
         x:Class="up1.add"
         Title="ДОБАВЛЕНИЕ СОТРУДНИКА">
         <Grid>
-                <Image Source="D:/apps/pic/fonadd.png" Width="510" Height="510"/>
+                <Image Source="D:/apps/pic/fonadd444.png" Width="510" Height="510"/>
                 <TextBlock Margin = "30 35 0 0" FontSize="20" FontWeight="Bold">Введите данные ниже: </TextBlock>
                 
                 <StackPanel Orientation="Vertical">
@@ -34,8 +34,8 @@
                         </StackPanel>
                         
                         <StackPanel Orientation="Horizontal">
-                                <Button Name="Save" Content="Сохранить" Click="Save_OnClick" Margin = "20 15 0 20"></Button>
-                                <Button Name="Back" Content="Назад" Click="GoBack" Margin = "30 15 0 20"></Button>
+                                <Button Name="Save" Content="Сохранить" Background="White" Click="Save_OnClick" Margin = "20 15 0 20"></Button>
+                                <Button Name="Back" Content="Назад" Background="White" Click="GoBack" Margin = "30 15 0 20"></Button>
                         </StackPanel>
                 </StackPanel>
                 

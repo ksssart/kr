@@ -2,9 +2,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="270" d:DesignHeight="530"
+        mc:Ignorable="d" d:DesignWidth="350" d:DesignHeight="530"
         MaxHeight="430"
-        MaxWidth="440"
+        MaxWidth="350"
         x:Class="up1.zakaz"
         Title="ЗАКАЗЫ">
     <Grid>
@@ -14,6 +14,7 @@
             <DataGrid Name="ZakazGrid" x:CompileBindings="False" Margin ="10 0 0 0" Height="250">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="id" Binding="{Binding id}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="number" Binding="{Binding number}"></DataGridTextColumn>
                     <DataGridTextColumn Header="client_id" Binding="{Binding client_id}"></DataGridTextColumn>
                     <DataGridTextColumn Header="object_id" Binding="{Binding object_id}"></DataGridTextColumn>
                 </DataGrid.Columns>
@@ -23,6 +24,11 @@
                 <Button Name="back" Margin = "10 50 0 0" Content="Назад" Background="RosyBrown" Click="Back"></Button>
             </StackPanel>
             
+            <StackPanel Orientation="Horizontal">
+            <TextBlock Margin = "10 35 0 0" FontWeight="Bold" >number: </TextBlock>
+            <TextBox Name="Number" x:CompileBindings="False" Text="{Binding number}" Width="150" Height="5" Margin = "10 25 0 0"></TextBox>
+            <Button Name="Delete" Margin = "10 25 0 0" Content="Удалить" Background="White" Click="DeleteData"></Button>
+            </StackPanel>
         </StackPanel>
     </Grid> 
 </Window>

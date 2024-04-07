@@ -24,3 +24,4 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
 }
+//<Image Source="D:/apps/pic/b1.png" Width="510" Height="230"/>
